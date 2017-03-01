@@ -11,26 +11,6 @@ body {
   display: none;
 }
 
-aside {
-  display: flex;
-  flex-direction: column;
-  display: block;
-  position: relative;
-  right: 0;
-  top: 0;
-  background-color: #243645;
-  color: #fff;
-  text-decoration: none;
-  width: 100%;
-  height: 40em;
-}
-
-.header {
-  background-color: #fff;
-  width: 100%;
-  height: 16em;
-}
-
 .header-search-box {
   display: flex;
   border-bottom: 1px solid grey;
@@ -74,9 +54,7 @@ aside {
 .CSR-srvc-rep-container {
   background-color: #fff;
   display: flex;
-  margin-top: .5em;
-  margin-left: .5em;
-  margin-right: .5em;
+  margin: 1em .5em;
 }
 
 .CSR-rep-location {
@@ -157,13 +135,19 @@ aside {
 }
 
 .nav-btn-link {
-  margin: 0 .2em;
+  margin: 0 .25em;
 }
 
 .drop-menu-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
+}
+
+.drop-menu-container h5 {
+  margin: 0 .5em;
+  font-size: 1em;
 }
 
 .drop-menu-array {
@@ -179,7 +163,6 @@ aside {
   flex-direction: column;
   width: 100%;
   border-bottom: .25em solid #9E9E9E;
-  box-shadow: 0px 2px 2px -1px black;
 }
 
 .circle-graph-container {
@@ -217,12 +200,9 @@ aside {
 }
 
 .bar-graph-container {
-  /*display: flex;*/
-  /*justify-content: center;*/
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  /*heigth: 15em;*/
 }
 
 .bar-graph-container img {
@@ -314,7 +294,8 @@ aside {
 }
 
 .about-job img {
-  height: 3em;
+  height: 2.5em;
+  margin-right: .5em;
 }
 
 .approved-salary p {
@@ -360,7 +341,7 @@ aside {
 
 .logo-link {
   height: 3em;
-  margin-left: 1em;
+  margin: 1em auto 1em auto;
 }
 
 .this-job-link {
@@ -402,6 +383,7 @@ aside {
 
 #copy-link-box input {
   width: 90%;
+  border: 1px solid #abaeb0;
 }
 
 #copy-link-box button {
@@ -495,16 +477,43 @@ aside {
       width: 100%;
     }
 
-    .nav-btn-link {
-      margin: 0 .25em;
-    }
-
     .header-search-input {
       heigth: 3em;
     }
 
+    .drop-menu-container h5 {
+      margin: .5em .5em;
+      font-size: 1.5em;
+    }
+
     .link-section {
-      width: 50%;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    .logo-link {
+      height: 3em;
+      margin: 0;
+    }
+
+    .social-btns {
+      margin: auto;
+    }
+
+    .social-btns h3 {
+      font-size: 1em;
+    }
+
+    .this-job-link {
+      height: auto;
+      margin: auto;
+      border-bottom: none;
+    }
+
+    .this-job-link h5 {
+      font-size: 1.5em;
+      text-align: center;
     }
 }
 
@@ -600,5 +609,17 @@ aside {
 
   .bar-graph-container {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+
+  .describe-link-box {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .link-section {
+    flex-direction: column;
   }
 }
